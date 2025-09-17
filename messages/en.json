@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "I'm Agustina",
+    "rol": "Front End Developer",
+    "description": "who loves turning great ideas in to code"
+  },
+    "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  }
+}

@@ -1,26 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Fuente Inter (inyectada con next/font/local en layout.tsx) */
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Apple Color Emoji", "Segoe UI Emoji";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-background: #faf8f5;
+  --color-title: #2d2a24;
+  --color-description: #6b665c;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --color-bgNav: #faf8f5;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-foreground: #1e1e2f;
+  --color-mutedfg: #5c5c72;
+
+  --color-brand: #9b6bff; 
+  --color-accent: #fb90a7; 
+  --color-muted: #ede9f7; 
 }

@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "Soy Agustina",
+    "rol": "Front End Developer",
+    "description": "me encanta convertir grandes ideas en código"
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos"
+  }
+}
