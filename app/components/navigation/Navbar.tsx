@@ -9,7 +9,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { IoGlobeOutline } from "react-icons/io5";
 
 function cx(...classes: Array<string | false | undefined>) {
@@ -20,6 +20,13 @@ export default function Navbar() {
   const locale = useLocale();
   const pathname = usePathname();
   const t = useTranslations("Navbar");
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const navItems = [
     { key: "home", href: "#top" },
@@ -38,7 +45,13 @@ export default function Navbar() {
     `/${loc}${basePath || ""}${hash}`;
 
   return (
-    <Disclosure as="nav" className="sticky top-0 z-50 bg-bgNav ">
+    <Disclosure
+      as="nav"
+      className={cx(
+        "sticky top-0 z-50 transition-all",
+        scrolled ? "bg-background backdrop-blur shadow-sm" : "bg-background"
+      )}
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -61,8 +74,8 @@ export default function Navbar() {
                       key={item.key}
                       href={`/${locale}${item.href}`}
                       className={cx(
-                        "px-3 py-2 text-md font-medium rounded-4xl transition-colors",
-                        "text-foreground/80 hover:text-foreground hover:bg-accent/50"
+                        "px-3 py-2 text-lg font-medium rounded-4xl transition-colors",
+                        "hover:text-foreground hover:bg-[#cb82d4]/50"
                       )}
                     >
                       {t(item.key)}

@@ -8,5 +8,73 @@
     "home": "Inicio",
     "about": "Sobre mí",
     "projects": "Proyectos"
+  },
+  "About": {
+    "about": "Sobre mí",
+    "iam": "Soy ",
+    "rol": "Desarrolladora Front End",
+    "description": " apasionada por crear interfaces modernas, accesibles y estéticas. Me encanta unir la lógica con el diseño para transformar ideas en productos reales.",
+    "currently": "Actualmente trabajo con tecnologías como, ",
+    "technologies": "React.js, React Native, Next.js,",
+    "end": " y sigo explorando nuevas formas de mejorar la experiencia de usuario con animaciones y diseño intuitivo."
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "tech": "Tecnologías",
+    "photoscape": {
+      "title": "Photoscape",
+      "description": "Proyecto freelance para un cliente privado que necesitaba un sitio web moderno y funcional para mostrar sus servicios de paisajismo. El desarrollo se centró en la estética visual, el rendimiento y la facilidad de navegación en cualquier dispositivo.",
+      "features": [
+        "Diseño responsive enfocado en resaltar imágenes de alta calidad.",
+        "Interfaz SEO-friendly construida con Next.js para mayor velocidad y visibilidad.",
+        "Estilo moderno y limpio con Tailwind CSS.",
+        "Navegación fluida y adaptable a todos los tamaños de pantalla.",
+        "Secciones dinámicas para servicios, portfolio y contacto."
+      ]
+    },
+    "m4life": {
+      "title": "M4Life",
+
+      "description": "Sitio institucional para M4Life, una startup dedicada a ofrecer soluciones microbiológicas para la agricultura y el cuidado del medio ambiente. El proyecto buscó transmitir profesionalismo con un diseño limpio y una experiencia de usuario fluida.",
+      "features": [
+        "Diseño de identidad visual con colores, tipografía e imágenes.",
+        "Creación de mockups en Figma y validación con el cliente.",
+        "Interfaz intuitiva con detalles visuales sutiles.",
+        "Diseño totalmente responsive para móviles, tablets y desktop.",
+        "Formulario de contacto integrado con EmailJS."
+      ]
+    },
+    "movies": {
+      "title": "Movies App",
+      "description": "Aplicación web moderna para descubrir películas en tendencia con una interfaz atractiva y adaptable. La sección principal se actualiza dinámicamente según las búsquedas de los usuarios, creando una experiencia personalizada.",
+      "features": [
+        "Sección de tendencias que se actualiza en tiempo real.",
+        "Integración de REST API con Appwrite para manejo de datos.",
+        "Diseño responsive utilizando Tailwind CSS.",
+        "Filtros dinámicos y búsqueda en tiempo real.",
+        "Despliegue optimizado con Vercel."
+      ]
+    },
+    "map": {
+      "title": "Mapa Interactivo",
+      "description": "Aplicación interactiva desarrollada como desafío técnico para visualizar datos geoespaciales en un mapa. Creada con React y Leaflet, permite explorar regiones con capas dinámicas e información detallada.",
+      "features": [
+        "Carga dinámica de datos GeoJSON desde recursos públicos.",
+        "Capas múltiples del mapa: carreteras, límites y más.",
+        "Zonas interactivas con efectos hover y panel informativo.",
+        "Diseño responsive adaptado a cualquier dispositivo."
+      ]
+    },
+    "pokemon": {
+      "title": "Pokemon",
+      "description": "Aplicación full-stack desarrollada en Henry Bootcamp para explorar y gestionar un catálogo de cartas Pokémon. Combina funciones de búsqueda, filtrado y CRUD en una interfaz dinámica y entretenida.",
+      "features": [
+        "Paginación de cartas Pokémon (12 por página).",
+        "Búsqueda por nombre y ordenamiento por ataque o alfabético.",
+        "Filtros por tipo y origen (API o creados por el usuario).",
+        "Creación de Pokémon mediante formulario validado.",
+        "Vista de detalle con opciones de edición y eliminación."
+      ]
+    }
   }
 }

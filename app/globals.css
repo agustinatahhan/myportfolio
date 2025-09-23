@@ -1,21 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  /* Fuente Inter (inyectada con next/font/local en layout.tsx) */
   --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     "Apple Color Emoji", "Segoe UI Emoji";
 
-  --color-background: #faf8f5;
   --color-title: #2d2a24;
   --color-description: #6b665c;
+  --color-background: #faf8f5;
+}
 
-  --color-bgNav: #faf8f5;
+@utility bg-about {
+  background-color: #f3efff;
+}
 
-  --color-foreground: #1e1e2f;
-  --color-mutedfg: #5c5c72;
+@utility bg-projects {
+  background-color: #2d2a24;
+}
 
-  --color-brand: #9b6bff; 
-  --color-accent: #fb90a7; 
-  --color-muted: #ede9f7; 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  color: #2d2a24;
 }

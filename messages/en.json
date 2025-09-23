@@ -4,9 +4,76 @@
     "rol": "Front End Developer",
     "description": "who loves turning great ideas in to code"
   },
-    "Navbar": {
+  "Navbar": {
     "home": "Home",
     "about": "About",
     "projects": "Projects"
+  },
+  "About": {
+    "about": "About",
+    "iam": "I am ",
+    "rol": "Front End Developer",
+    "description": " passionate about creating modern, accessible interfaces with a refined aesthetic. I love combining logic with design to transform ideas into real products.",
+    "currently": "Currently, I work with technologies such as",
+    "technologies": "React.js, React Native, Next.js,",
+    "end": " and I continue exploring new ways to enhance the user experience with animations and intuitive design."
+  },
+  "Projects": {
+    "title": "Projects",
+    "tech": "Technologies",
+    "photoscape": {
+      "title": "Photoscape",
+      "description": "Freelance project for a private client who needed a modern and functional website to showcase their landscaping services. The site was designed to emphasize visual appeal, fast performance, and ease of navigation across all devices.",
+      "features": [
+        "Responsive layout focused on highlighting high-quality project images.",
+        "SEO-friendly interface built with Next.js for speed and visibility.",
+        "Clean and modern styling with Tailwind CSS.",
+        "Smooth navigation with full responsiveness across screen sizes.",
+        "Dynamic sections for services, portfolio, and contact information."
+      ]
+    },
+    "m4life": {
+      "title": "M4Life",
+      "description": "Institutional website for M4Life, a startup specializing in microbiological solutions for agriculture and the environment. The project focused on creating a professional online presence with a clean design and seamless user experience.",
+      "features": [
+        "Brand identity design through colors, typography, and visuals.",
+        "Custom mockups created in Figma and refined with client feedback.",
+        "Clean, intuitive UI with subtle visual effects.",
+        "Fully responsive layout for mobile, tablet, and desktop.",
+        "Contact form integrated with EmailJS for direct communication."
+      ]
+    },
+    "movies": {
+      "title": "Movies App",
+      "description": "A modern web app for discovering trending movies with a responsive and engaging interface. The app dynamically highlights what’s popular based on real user searches, offering a personalized experience.",
+      "features": [
+        "Trending section that updates dynamically from user behavior.",
+        "REST API integration with Appwrite for real-time data.",
+        "Responsive UI styled with Tailwind CSS.",
+        "Dynamic filtering and search for a smooth exploration.",
+        "Deployed with Vercel for performance and scalability."
+      ]
+    },
+    "map": {
+      "title": "Interactive Map",
+      "description": "Interactive map application built as a technical challenge to visualize geospatial data. Designed with React and Leaflet, it offers an intuitive way to explore regions with interactive layers and details.",
+      "features": [
+        "Dynamic GeoJSON data loading from public assets.",
+        "Multiple map layers including roads and boundaries.",
+        "Interactive zones with hover highlights and info panel.",
+        "Responsive design optimized for all devices."
+      ]
+    },
+    "pokemon": {
+      "title": "Pokemon",
+      "description": "Full-stack web application developed at Henry Bootcamp to explore and manage a catalog of Pokémon cards. The app combines search, filtering, and CRUD features in a playful yet functional interface.",
+      "features": [
+        "Pokémon cards displayed with pagination (12 per page).",
+        "Search by name, sort by alphabet or attack strength.",
+        "Filter by type and origin (API or custom).",
+        "Create new Pokémon with a validated form.",
+        "Detail view with edit and delete options."
+      ]
+    }
   }
 }
