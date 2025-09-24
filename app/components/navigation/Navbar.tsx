@@ -20,12 +20,21 @@ export default function Navbar() {
   const locale = useLocale();
   const pathname = usePathname();
   const t = useTranslations("Navbar");
+
   const [scrolled, setScrolled] = useState(false);
+  const [hash, setHash] = useState("");
+
+  // scroll detect
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // hash detect (solo en cliente)
+  useEffect(() => {
+    setHash(window.location.hash);
   }, []);
 
   const navItems = [
@@ -88,10 +97,7 @@ export default function Navbar() {
               <div className="hidden sm:block">
                 <div className="flex items-center justify-end gap-2">
                   <Link
-                    href={makeLocaleHref(
-                      nextLocale,
-                      typeof window !== "undefined" ? window.location.hash : ""
-                    )}
+                    href={makeLocaleHref(nextLocale, hash)}
                     className="px-3 py-2 text-sm font-medium flex items-center gap-2 rounded-md
                  transition-all duration-200 
                   hover:scale-105 
@@ -99,7 +105,7 @@ export default function Navbar() {
                   >
                     <IoGlobeOutline
                       size={20}
-                      className=" transition-transform duration-200 group-hover:rotate-12"
+                      className="transition-transform duration-200 group-hover:rotate-12"
                     />
                     {locale.toUpperCase()}
                   </Link>
@@ -109,16 +115,13 @@ export default function Navbar() {
               {/* Mobile: lang + burger */}
               <div className="flex items-center gap-2 sm:hidden">
                 <Link
-                  href={makeLocaleHref(
-                    nextLocale,
-                    typeof window !== "undefined" ? window.location.hash : ""
-                  )}
+                  href={makeLocaleHref(nextLocale, hash)}
                   className="px-3 py-2 text-sm font-medium"
                 >
                   {nextLocale.toUpperCase()}
                 </Link>
 
-                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-foreground/70 hover:bg-[--color-muted]/40 hover:text-foreground focus:outline-2 focus:outline-[--color-brand]">
+                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-foreground/70 hover:bg-[#cb82d4]/50 hover:text-foreground focus:outline-2 focus:outline-[--color-brand]">
                   {open ? (
                     <XMarkIcon className="size-6" />
                   ) : (
@@ -139,7 +142,7 @@ export default function Navbar() {
                   href={`/${locale}${item.href}`}
                   className={cx(
                     "block rounded-4xl px-3 py-2 text-base font-medium transition-colors",
-                    "text-foreground/80 hover:text-foreground hover:bg-accent/50"
+                    "text-foreground/80 hover:text-foreground hover:bg-[#cb82d4]/50"
                   )}
                 >
                   {t(item.key)}

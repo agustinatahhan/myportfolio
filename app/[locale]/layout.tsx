@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 import "../globals.css";
 import localFont from "next/font/local";
 import Navbar from "../components/navigation/Navbar";
+import { Footer } from "../components/navigation/Footer";
 
 const satoshi = localFont({
   src: [
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
