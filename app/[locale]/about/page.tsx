@@ -46,7 +46,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="text-center md:text-left space-y-6" data-aos="fade-up">
+        <div className="text-center md:text-left space-y-6">
           <div>
             <h2 className="relative inline-block text-4xl sm:text-5xl font-bold">
               {t("about")}
