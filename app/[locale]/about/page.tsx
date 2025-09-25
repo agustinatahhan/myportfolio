@@ -1,13 +1,11 @@
 // app/[locale]/_components/About.tsx
 "use client";
 
-import { useAOS } from "@/app/components/aos/useAOS";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function About() {
   const t = useTranslations("About");
-  useAOS();
   return (
     <section
       id="about"

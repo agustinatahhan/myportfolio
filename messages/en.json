@@ -75,5 +75,9 @@
         "Detail view with edit and delete options."
       ]
     }
+  },
+  "Footer": {
+    "lets": "Let's work",
+    "together": "together!"
   }
 }

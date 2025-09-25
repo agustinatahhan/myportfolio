@@ -76,5 +76,9 @@
         "Vista de detalle con opciones de edición y eliminación."
       ]
     }
+  },
+  "Footer": {
+    "lets": "Trabajemos",
+    "together": "juntos!"
   }
 }
