@@ -11,7 +11,7 @@ export default function About() {
       id="about"
       className="relative bg-about min-h-[85vh] flex items-center overflow-hidden scroll-mt-[72px] pt-[100px]"
     >
-      <div
+      {/* <div
         className="absolute top-0 left-0 w-full h-[100px] overflow-hidden leading-[0] rotate-180 pointer-events-none"
         aria-hidden
       >
@@ -33,7 +33,7 @@ export default function About() {
       <div
         className="absolute -z-10 bottom-10 -right-10 w-[28rem] h-[28rem] bg-[#9B6BFF]/20 rounded-full blur-xl pointer-events-none will-change-transform transform-gpu"
         aria-hidden
-      />
+      /> */}
 
       <div className="relative mx-auto max-w-5xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div className="flex justify-center">

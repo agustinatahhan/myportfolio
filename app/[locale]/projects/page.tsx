@@ -1,5 +1,4 @@
 "use client";
-import SectionWave from "@/app/components/divider/SectionWave";
 import { useTranslations } from "next-intl";
 import { projects } from "@/app/data/projects";
 import ProjectCard from "@/app/components/projectCard/ProjectCard";
@@ -9,7 +8,7 @@ export default function Projects() {
 
   return (
     <section id="work" className="relative bg-background py-16 min-h-[85vh]">
-      <SectionWave position="top" color="#f3efff" height={120} />
+      {/* <SectionWave position="top" color="#f3efff" height={120} /> */}
 
       <div className="relative mx-auto max-w-6xl px-6 -mt-6" >
         <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12">
