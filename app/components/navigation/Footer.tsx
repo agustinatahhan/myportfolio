@@ -9,12 +9,12 @@ export const Footer = () => {
     mail: "mailto:agustahhan@gmail.com",
   };
 
-  const t = useTranslations();
+  const t = useTranslations("Footer");
 
   return (
     <footer className="bg-title text-background px-8 py-12 flex flex-col items-center md:flex-row md:justify-center md:items-start gap-12 text-center md:text-left">
       <div className="text-4xl md:text-5xl font-bold leading-tight max-w-xs">
-        {t("Footer.lets")} <br /> {t("Footer.together")}
+        {t("lets")} <br /> {t("together")}
       </div>
 
       <nav className="w-full max-w-xs mx-auto">

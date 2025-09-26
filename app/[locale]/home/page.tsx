@@ -17,7 +17,7 @@ export default function Home() {
         {t("rol")}
       </h2>
 
-      <h3 className="mt-4 text-xl sm:text-3xl text-title relative z-10" >
+      <h3 className="mt-4 text-lg sm:text-3xl text-title relative z-10" >
         {t("description")}
       </h3>
     </section>
