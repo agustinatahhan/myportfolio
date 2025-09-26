@@ -9,8 +9,9 @@ import { TechStack } from "@/app/components/stack/TechStack";
 type RouteParams = { locale: string; id: string };
 type Props = { params: Promise<RouteParams> };
 
+const locales = ["en", "es"];
 export async function generateStaticParams() {
-  return projects.map((p) => ({ locale: "es", id: p.id }));
+  return projects.flatMap((p) => locales.map((locale) => ({ locale, id: p.id })));
 }
 
 export async function generateMetadata({ params }: Props) {
