@@ -91,4 +91,26 @@ export const projects: ProjectBase[] = [
     descKey: "Projects.pokemon.description",
     features: ["Projects.pokemon.features"],
   },
+  {
+    id: "sportiverse",
+    kind: "web",
+    tech: [
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Sequelize",
+      "HTML",
+      "CSS",
+    ],
+    repo: "https://github.com/SofiDubrowsky/PF-Front",
+    live: undefined,
+    media: [
+      { type: "image", src: "/sportiverse.png", alt: "Home View" },
+    ],
+    titleKey: "Projects.sportiverse.title",
+    descKey: "Projects.sportiverse.description",
+    features: ["Projects.sportiverse.features"],
+  },
 ];

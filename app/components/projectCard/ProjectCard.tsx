@@ -29,7 +29,6 @@ export default function ProjectCard({
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 
             className="object-cover transition duration-700 group-hover:scale-[1.05]"
-            quality={95}
             priority={priority}
           />
 

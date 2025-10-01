@@ -12,62 +12,61 @@ export const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="bg-title text-background px-8 py-12 flex flex-col items-center md:flex-row md:justify-center md:items-start gap-12 text-center md:text-left">
-      <div className="text-4xl md:text-5xl font-bold leading-tight max-w-xs">
+    <footer className="bg-title text-background px-8 py-12 flex flex-col items-center gap-12 text-center md:flex-row md:justify-center md:items-center md:gap-16 md:text-left">
+      {/* Texto */}
+      <div className="text-4xl md:text-5xl font-bold leading-tight">
         {t("lets")} <br /> {t("together")}
       </div>
 
-      <nav className="w-full max-w-xs mx-auto">
-        <ul className="flex flex-col gap-4 items-center md:items-start">
-          <li>
-            <a
-              href={media.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="grid grid-cols-[3rem,1fr] items-center gap-3 justify-items-center md:justify-items-start group"
-            >
-              <div className="w-12 h-12 min-w-[3rem] flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
-                <FaLinkedin className="shrink-0" size={22} color="#faf8f5" aria-hidden />
-              </div>
-              <span className="leading-[1] transition-transform duration-300 group-hover:scale-105">
-                Agustina Tahhan
-              </span>
-            </a>
-          </li>
+      <ul className="flex flex-col gap-6 items-start md:gap-6 md:items-start">
+        <li>
+          <a
+            href={media.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
+              <FaLinkedin size={22} color="#faf8f5" aria-hidden />
+            </div>
+            <span className="transition-transform duration-300 group-hover:scale-105">
+              Agustina Tahhan
+            </span>
+          </a>
+        </li>
 
-          <li>
-            <a
-              href={media.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="grid grid-cols-[3rem,1fr] items-center gap-3 justify-items-center md:justify-items-start group"
-            >
-              <div className="w-12 h-12 min-w-[3rem] flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
-                <FaGithub className="shrink-0" size={22} color="#faf8f5" aria-hidden />
-              </div>
-              <span className="leading-[1] transition-transform duration-300 group-hover:scale-105">
-                /agustinatahhan
-              </span>
-            </a>
-          </li>
+        <li>
+          <a
+            href={media.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
+              <FaGithub size={22} color="#faf8f5" aria-hidden />
+            </div>
+            <span className="transition-transform duration-300 group-hover:scale-105">
+              /agustinatahhan
+            </span>
+          </a>
+        </li>
 
-          <li>
-            <a
-              href={media.mail}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="grid grid-cols-[3rem,1fr] items-center gap-3 justify-items-center md:justify-items-start group"
-            >
-              <div className="w-12 h-12 min-w-[3rem] flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
-                <IoIosMail className="shrink-0" size={22} color="#faf8f5" aria-hidden />
-              </div>
-              <span className="leading-[1] transition-transform duration-300 group-hover:scale-105">
-                agustahhan@gmail.com
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <li>
+          <a
+            href={media.mail}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
+              <IoIosMail size={22} color="#faf8f5" aria-hidden />
+            </div>
+            <span className="transition-transform duration-300 group-hover:scale-105">
+              agustahhan@gmail.com
+            </span>
+          </a>
+        </li>
+      </ul>
     </footer>
   );
 };

@@ -41,6 +41,7 @@ export default function Navbar() {
     { key: "home", href: "#top" },
     { key: "about", href: "#about" },
     { key: "projects", href: "#work" },
+    { key: "skills", href: "#skills" },
   ];
 
   const basePath = useMemo(() => {

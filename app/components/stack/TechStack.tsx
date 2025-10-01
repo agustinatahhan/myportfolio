@@ -1,6 +1,7 @@
 type Props = {
   index: number;
   tech: string;
+  icon?: React.ReactNode
 };
 
 const techColors: Record<string, string> = {
@@ -19,13 +20,16 @@ const techColors: Record<string, string> = {
   Git: "bg-[#fdded1] text-[#2d2a24]",
   "Tailwind CSS": "bg-[#d2f0f4] text-[#2d2a24]",
   Bootstrap: "bg-[#e2d6f7] text-[#2d2a24]",
+  Firebase: "bg-[#fff4d6] text-[#2d2a24]",     
+  "TanStack Query": "bg-[#ffe0e6] text-[#2d2a24]",
+  "React Native": "bg-[#d6f0ff] text-[#2d2a24]",  
   default: "bg-[#f3e6ff] text-[#2d2a24]",
 };
 
 const getTechColor = (tech: string): string =>
   techColors[tech] || techColors.default;
 
-export const TechStack = ({ index, tech }: Props) => {
+export const TechStack = ({ index, tech, icon }: Props) => {
   return (
     <div
       className={`group relative overflow-hidden rounded-xl sm:px-4 sm:py-1.5 px-2 py-1 font-medium transform hover:scale-105 transition-all duration-300 hover:shadow-xl ${getTechColor(
@@ -35,6 +39,9 @@ export const TechStack = ({ index, tech }: Props) => {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-all duration-700"></div>
       <div className="relative flex items-center gap-2">
+        {icon && 
+        <div>{icon}</div>
+        }
         <span className="font-regular tracking-wide">{tech}</span>
       </div>
     </div>

@@ -2,21 +2,23 @@
   "HomePage": {
     "title": "I'm Agustina",
     "rol": "Front End Developer",
-    "description": "who loves turning great ideas in to code"
+    "description": "I love turning great ideas in to code"
   },
   "Navbar": {
     "home": "Home",
     "about": "About",
-    "projects": "Projects"
+    "projects": "Projects",
+    "skills": "Skills"
   },
   "About": {
-    "about": "About",
-    "iam": "I am ",
+    "about": "About me",
+    "iam": "I'm a ",
     "rol": "Front End Developer",
-    "description": " passionate about creating modern, accessible interfaces with a refined aesthetic. I love combining logic with design to transform ideas into real products.",
-    "currently": "Currently, I work with technologies such as",
-    "technologies": "React.js, React Native, Next.js,",
-    "end": " and I continue exploring new ways to enhance the user experience with animations and intuitive design."
+    "description": " specialized in building web and mobile interfaces.",
+    "end": "I love transforming ideas into real products."
+  },
+  "Skills": {
+    "skills": "Skills"
   },
   "Projects": {
     "title": "Projects",
@@ -67,6 +69,17 @@
     "pokemon": {
       "title": "Pokemon",
       "description": "Full-stack web application developed at Henry Bootcamp to explore and manage a catalog of Pokémon cards. The app combines search, filtering, and CRUD features in a playful yet functional interface.",
+      "features": [
+        "Pokémon cards displayed with pagination (12 per page).",
+        "Search by name, sort by alphabet or attack strength.",
+        "Filter by type and origin (API or custom).",
+        "Create new Pokémon with a validated form.",
+        "Detail view with edit and delete options."
+      ]
+    },
+    "sportiverse": {
+      "title": "Sportiverse",
+      "description": "Full-stack web application developed with a team to make appointments in a sports club and manage the reservations as an admin. The app combines search, filtering, and CRUD features, also authentication and payments using Mercado Pago.",
       "features": [
         "Pokémon cards displayed with pagination (12 per page).",
         "Search by name, sort by alphabet or attack strength.",

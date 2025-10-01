@@ -18,6 +18,16 @@
   background-color: #2d2a24;
 }
 
+@utility bg-brown {
+  background: #FAF8F5;
+background: linear-gradient(351deg, rgba(250, 248, 245, 1) 25%, rgba(218, 215, 211, 1) 50%, rgba(148, 143, 136, 1) 100%, rgba(107, 102, 92, 0.97) 75%);
+};
+
+@utility bg-skills{
+  background: #FAF8F5;
+background: linear-gradient(351deg, rgba(250, 248, 245, 1) 0%, rgba(244, 240, 254, 1) 50%, rgba(228, 219, 255, 1) 100%);
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
