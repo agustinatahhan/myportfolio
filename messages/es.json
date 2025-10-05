@@ -12,10 +12,8 @@
   },
   "About": {
     "about": "Sobre mí",
-    "iam": "Soy ",
-    "rol": "Front End Developer",
-    "description": "  especializada en desarrollar interfaces web y mobile.",
-    "end": "Me encanta transformar ideas en productos reales."
+    "iam": "Soy una persona curiosa y creativa.\nHace tres años comencé a programar, y encontré en el desarrollo una forma de crear, aprender y resolver problemas a través del diseño y el código.\nMe inspira ver cómo una idea puede transformarse en algo útil y real."
+
   },
   "Skills": {
     "skills": "Skills"

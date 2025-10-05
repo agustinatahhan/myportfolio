@@ -69,10 +69,20 @@ export default function Skills() {
 
           <div className="space-y-8 max-w-4xl">
             <div className="flex flex-col items-center justify-center sm:items-start sm-justify-start">
-              <h3 className="text-xl font-semibold mb-3 text-title ">
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-xl font-semibold mb-3 text-title "
+              >
                 Frontend
-              </h3>
-              <div className="flex flex-wrap sm:justify-start justify-center gap-3 sm:gap-4">
+              </motion.h3>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-wrap sm:justify-start justify-center gap-3 sm:gap-4"
+              >
                 {frontendSkills.map((tech, index) => (
                   <TechStack
                     key={tech.name}
@@ -81,12 +91,24 @@ export default function Skills() {
                     icon={<tech.icon size={20} />}
                   />
                 ))}
-              </div>
+              </motion.div>
             </div>
 
             <div className="flex flex-col items-center justify-center sm:items-start sm-justify-start">
-              <h3 className="text-xl font-semibold mb-3 text-title">Backend</h3>
-              <div className="flex flex-wrap sm:justify-start justify-center gap-3 sm:gap-4">
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-xl font-semibold mb-3 text-title"
+              >
+                Backend
+              </motion.h3>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-wrap sm:justify-start justify-center gap-3 sm:gap-4"
+              >
                 {backendSkills.map((tech, index) => (
                   <TechStack
                     key={tech.name}
@@ -95,12 +117,24 @@ export default function Skills() {
                     icon={<tech.icon size={20} />}
                   />
                 ))}
-              </div>
+              </motion.div>
             </div>
 
             <div className="flex flex-col items-center justify-center sm:items-start sm-justify-start">
-              <h3 className="text-xl font-semibold mb-3 text-title">Tools</h3>
-              <div className="flex flex-wrap sm:justify-start justify-center gap-3 sm:gap-4">
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-xl font-semibold mb-3 text-title"
+              >
+                Tools
+              </motion.h3>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-wrap sm:justify-start justify-center gap-3 sm:gap-4"
+              >
                 {toolsSkills.map((tech, index) => (
                   <TechStack
                     key={tech.name}
@@ -109,7 +143,7 @@ export default function Skills() {
                     icon={<tech.icon size={20} />}
                   />
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

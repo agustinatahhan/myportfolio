@@ -12,10 +12,8 @@
   },
   "About": {
     "about": "About me",
-    "iam": "I'm a ",
-    "rol": "Front End Developer",
-    "description": " specialized in building web and mobile interfaces.",
-    "end": "I love transforming ideas into real products."
+    "iam": "I'm a curious and creative person.\nThree years ago, I discovered programming and found in development a way to create, learn, and solve problems through design and code.\nI'm inspired by how an idea can transform into something useful and real."
+
   },
   "Skills": {
     "skills": "Skills"

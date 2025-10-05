@@ -39,7 +39,7 @@ export default function Projects() {
                 key={p.id}
               >
                 <ProjectCard
-                  href={`/projects/${p.id}`}
+                  href={`projects/${p.id}`}
                   title={t(p.titleKey)}
                   imageSrc={imageSrc}
                   imageAlt={imageAlt}

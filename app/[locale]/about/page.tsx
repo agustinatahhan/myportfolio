@@ -60,17 +60,15 @@ export default function About() {
             </motion.h2>
           </div>
 
-          <motion.p    initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              // viewport={{ once: true }}
-              transition={{
-                duration: 0.3,
-              }} className="text-lg leading-relaxed">
-            {t("iam")}
-            <span className="font-semibold text-gradient">{t("rol")}</span>
-            {t("description")}<br/>
-             {t("end")}
-          </motion.p>
+         <motion.p
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.3 }}
+  className="text-lg leading-relaxed whitespace-pre-line"
+>
+  {t("iam")}
+</motion.p>
+
         
         </div>
       </div>

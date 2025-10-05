@@ -11,6 +11,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { IoGlobeOutline } from "react-icons/io5";
+import Image from "next/image";
+import { LanguageSwitcher } from "../lang/LanguageSwitcher";
 
 function cx(...classes: Array<string | false | undefined>) {
   return classes.filter(Boolean).join(" ");
@@ -67,12 +69,15 @@ export default function Navbar() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
               {/* Logo */}
-              <div className="flex items-center justify-start">
-                <Link
-                  href={`/${locale}#top`}
-                  className="font-bold text-title text-lg"
-                >
-                  Agustina
+              <div className="flex items-center justify-start w-12 h-12 sm:w-15 sm:h-15 relative">
+                <Link href={`/${locale}#top`}>
+                  <Image
+                    src="/favicon.ico"
+                    alt="logo"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
                 </Link>
               </div>
 
@@ -96,32 +101,12 @@ export default function Navbar() {
 
               {/* Botón cambio de idioma */}
               <div className="hidden sm:block">
-                <div className="flex items-center justify-end gap-2">
-                  <Link
-                    href={makeLocaleHref(nextLocale, hash)}
-                    className="px-3 py-2 text-sm font-medium flex items-center gap-2 rounded-md
-                 transition-all duration-200 
-                  hover:scale-105 
-                 active:scale-95 active:rotate-1"
-                  >
-                    <IoGlobeOutline
-                      size={20}
-                      className="transition-transform duration-200 group-hover:rotate-12"
-                    />
-                    {locale.toUpperCase()}
-                  </Link>
-                </div>
+                <LanguageSwitcher />
               </div>
 
               {/* Mobile: lang + burger */}
               <div className="flex items-center gap-2 sm:hidden">
-                <Link
-                  href={makeLocaleHref(nextLocale, hash)}
-                  className="px-3 py-2 text-sm font-medium"
-                >
-                  {nextLocale.toUpperCase()}
-                </Link>
-
+                <LanguageSwitcher />
                 <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-foreground/70 hover:bg-[#cb82d4]/50 hover:text-foreground focus:outline-2 focus:outline-[--color-brand]">
                   {open ? (
                     <XMarkIcon className="size-6" />
