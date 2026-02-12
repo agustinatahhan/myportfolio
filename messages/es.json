@@ -1,19 +1,20 @@
 {
   "HomePage": {
-    "title": "Soy Agustina",
+    "name": "Agustina",
+    "lastname": "Tahhan",
     "rol": "Front End Developer",
     "description": "me encanta convertir grandes ideas en código"
   },
   "Navbar": {
     "home": "Inicio",
-    "about": "Sobre mí",
+    "contact": "Contacto",
     "projects": "Proyectos",
     "skills": "Skills"
   },
-  "About": {
-    "about": "Sobre mí",
-    "iam": "Soy una persona curiosa y creativa.\nHace tres años comencé a programar, y encontré en el desarrollo una forma de crear, aprender y resolver problemas a través del diseño y el código.\nMe inspira ver cómo una idea puede transformarse en algo útil y real."
-
+  "Contact": {
+    "headline": "Ayudo a convertir grandes ideas en código.",
+    "description": "Si tenés una propuesta o proyecto en mente, me encantaría que conversemos.",
+    "cta": "Escribime"
   },
   "Skills": {
     "skills": "Skills"
@@ -21,9 +22,21 @@
   "Projects": {
     "title": "Proyectos",
     "tech": "Tecnologías",
+    "guiagastronomica": {
+      "title": "Guía Gastronómica Dominicana",
+      "description": "Una guía gastronómica digital creada para mostrar la identidad culinaria de la República Dominicana. La plataforma combina destinos, platos tradicionales, rutas culturales y los guardianes del sabor en una experiencia editorial inmersiva que conecta territorio, cultura y gastronomía.",
+      "features": [
+        "Desarrollada con Next.js y TypeScript bajo una arquitectura Headless con WordPress.",
+        "Gestión de contenido desde WordPress consumido mediante GraphQL.",
+        "Mapa interactivo implementado con React-Leaflet para explorar destinos de forma geográfica.",
+        "Diseño editorial enfocado en narrativa visual y fotografía de alta calidad.",
+        "Interfaz completamente responsive con Tailwind CSS, priorizando rendimiento y accesibilidad.",
+        "Optimización de imágenes y estructura SEO orientada a la escalabilidad del contenido."
+      ]
+    },
     "photoscape": {
       "title": "Photoscape",
-      "description": "Proyecto freelance para un cliente privado que necesitaba un sitio web moderno y funcional para mostrar sus servicios de paisajismo. El desarrollo se centró en la estética visual, el rendimiento y la facilidad de navegación en cualquier dispositivo.",
+      "description": "Proyecto desarrollado para ThePostDM, una agencia digital que gestiona múltiples marcas. Diseñé y desarrollé una experiencia web moderna y escalable para uno de sus clientes, priorizando rendimiento, identidad visual y claridad en la navegación.",
       "features": [
         "Diseño responsive enfocado en resaltar imágenes de alta calidad.",
         "Interfaz SEO-friendly construida con Next.js para mayor velocidad y visibilidad.",
@@ -88,6 +101,17 @@
       ]
     }
   },
+  "Apps": {
+    "coinly": {
+      "title": "Coinly",
+      "description": "App desarrollada con React Native y Expo que consume datos en tiempo real desde la API de CoinGecko. Permite visualizar el valor actual de criptomonedas, buscarlas por nombre y agregarlas a favoritos. Implementa TanStack Query para manejo eficiente del estado y sincronización de datos."
+    },
+    "movieapp": {
+      "title": "Movie App",
+      "description": "App enfocada en la exploración de películas mediante la API de The Movie Database (TMDB). Incluye visualización en formato cards y un carrusel animado utilizando React Native Reanimated Carousel. Manejo de datos con TanStack Query y estructura tipada con TypeScript."
+    }
+  },
+
   "Footer": {
     "lets": "Trabajemos",
     "together": "juntos!"

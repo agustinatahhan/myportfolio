@@ -1,26 +1,40 @@
 {
   "HomePage": {
-    "title": "I'm Agustina",
+    "name": "Agustina",
+    "lastname": "Tahhan",
     "rol": "Front End Developer",
     "description": "I love turning great ideas in to code"
   },
   "Navbar": {
     "home": "Home",
-    "about": "About",
+    "contact": "Contact",
     "projects": "Projects",
     "skills": "Skills"
   },
-  "About": {
-    "about": "About me",
-    "iam": "I'm a curious and creative person.\nThree years ago, I discovered programming and found in development a way to create, learn, and solve problems through design and code.\nI'm inspired by how an idea can transform into something useful and real."
-
+  "Contact": {
+    "headline": "I help turn big ideas into code.",
+    "description": "If you have a proposal or a project in mind, I’d love to hear about it.",
+    "cta": "Email me"
   },
+
   "Skills": {
     "skills": "Skills"
   },
   "Projects": {
     "title": "Projects",
     "tech": "Technologies",
+    "guiagastronomica": {
+      "title": "Guía Gastronómica Dominicana",
+      "description": "Project developed for ThePostDM, a digital agency managing multiple brands. I designed and built a modern, scalable web experience for one of their clients, prioritizing performance, visual identity, and clarity in navigation.",
+      "features": [
+        "Built with Next.js and TypeScript using a Headless WordPress architecture.",
+        "Content managed through WordPress and consumed via GraphQL.",
+        "Interactive map developed with React-Leaflet to explore destinations geographically.",
+        "Editorial layout focused on storytelling, photography, and cultural identity.",
+        "Fully responsive design with Tailwind CSS ensuring performance and accessibility.",
+        "Optimized image handling and SEO-oriented structure for content scalability."
+      ]
+    },
     "photoscape": {
       "title": "Photoscape",
       "description": "Freelance project for a private client who needed a modern and functional website to showcase their landscaping services. The site was designed to emphasize visual appeal, fast performance, and ease of navigation across all devices.",
@@ -85,6 +99,16 @@
         "Create new Pokémon with a validated form.",
         "Detail view with edit and delete options."
       ]
+    }
+  },
+  "Apps": {
+    "coinly": {
+      "title": "Coinly",
+      "description": "A mobile application built with React Native and Expo that consumes real-time cryptocurrency data from the CoinGecko API. It allows users to track current coin values, search by name, and save favorites. Data fetching and caching are handled efficiently using TanStack Query, ensuring a smooth and responsive user experience."
+    },
+    "movieapp": {
+      "title": "Movie App",
+      "description": "A mobile application designed to explore movies using The Movie Database (TMDB) API. Features a card-based layout and an animated carousel powered by React Native Reanimated Carousel. Data management is handled with TanStack Query and the application structure is fully typed with TypeScript."
     }
   },
   "Footer": {

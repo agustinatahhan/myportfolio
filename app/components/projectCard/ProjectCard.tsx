@@ -6,6 +6,7 @@ import Link from "next/link";
 type ProjectCardProps = {
   href: string;
   title: string;
+  tech: string[];
   imageSrc: string;
   imageAlt: string;
   priority?: boolean;
@@ -14,29 +15,44 @@ type ProjectCardProps = {
 export default function ProjectCard({
   href,
   title,
+  tech,
   imageSrc,
   imageAlt,
   priority = false,
 }: ProjectCardProps) {
+  const mainTech = tech.slice(0, 3);
+
   return (
-    <Link href={href} className="group block focus:outline-none">
-      <div className="relative w-full overflow-hidden rounded-lg transition hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#9B6BFF] shadow-lg">
-        <div className="relative aspect-[16/10] sm:aspect-[16/9]">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    <Link href={href} className="group block">
+      <div className="space-y-6">
+        {/* IMAGE */}
+        <div className="relative overflow-hidden rounded-[8px]">
+          <div className="relative aspect-[16/9]">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"
+              className="object-cover transition duration-700 group-hover:scale-[1.05]"
+              priority={priority}
+            />
+          </div>
+        </div>
 
-            className="object-cover transition duration-700 group-hover:scale-[1.05]"
-            priority={priority}
-          />
+        <div className="space-y-3">
+          <h3 className="text-lg md:text-xl font-extrabold tracking-tight uppercase sat text-title">
+            {title}
+          </h3>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-            <h3 className="text-white text-lg sm:text-xl font-semibold tracking-tight">
-              {title}
-            </h3>
+          <div className="flex flex-wrap gap-2">
+            {mainTech.map((techItem, index) => (
+              <span
+                key={index}
+                className="text-xs px-3 py-1 rounded-full border border-title"
+              >
+                {techItem}
+              </span>
+            ))}
           </div>
         </div>
       </div>

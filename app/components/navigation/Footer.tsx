@@ -12,9 +12,9 @@ export const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="bg-title text-background px-8 py-12 flex flex-col items-center gap-12 text-center md:flex-row md:justify-center md:items-center md:gap-16 md:text-left">
+    <footer className="bg-mocha text-background px-8 py-12 flex flex-col items-center gap-12 text-center md:flex-row md:justify-center md:items-center md:gap-16 md:text-left">
       {/* Texto */}
-      <div className="text-4xl md:text-5xl font-bold leading-tight">
+      <div className="text-4xl md:text-5xl font-bold text-center sat uppercase text-vainilla">
         {t("lets")} <br /> {t("together")}
       </div>
 
@@ -26,10 +26,10 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 group"
           >
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-mochita/20 hover:bg-mochita/30 transition-transform duration-300 group-hover:scale-110">
               <FaLinkedin size={22} color="#faf8f5" aria-hidden />
             </div>
-            <span className="transition-transform duration-300 group-hover:scale-105">
+            <span className="transition-transform duration-300 group-hover:scale-105 text-vainilla sat">
               Agustina Tahhan
             </span>
           </a>
@@ -42,10 +42,10 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 group"
           >
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-mochita/20 hover:bg-mochita/30 transition-transform duration-300 group-hover:scale-110">
               <FaGithub size={22} color="#faf8f5" aria-hidden />
             </div>
-            <span className="transition-transform duration-300 group-hover:scale-105">
+            <span className="transition-transform duration-300 group-hover:scale-105  text-vainilla sat">
               /agustinatahhan
             </span>
           </a>
@@ -58,10 +58,10 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 group"
           >
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-description hover:bg-description/50 transition-transform duration-300 group-hover:scale-110">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-mochita/20 hover:bg-mochita/30 transition-transform duration-300 group-hover:scale-110">
               <IoIosMail size={22} color="#faf8f5" aria-hidden />
             </div>
-            <span className="transition-transform duration-300 group-hover:scale-105">
+            <span className="transition-transform duration-300 group-hover:scale-105   text-vainilla sat">
               agustahhan@gmail.com
             </span>
           </a>

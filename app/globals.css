@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, -apple-system,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    "Apple Color Emoji", "Segoe UI Emoji";
 
-  --color-title: #2d2a24;
+  --color-title: #2d2220;
   --color-description: #6b665c;
   --color-background: #faf8f5;
+  --color-whiteText: #F5F5DC;
+  --color-mocha: #4b3935;
+  --color-mochita: #e7dedd;
+  --color-vainilla: #F0e7d5;
 }
 
 @utility bg-about {
@@ -34,5 +35,85 @@ html:focus-within {
 
 
 body {
-  color: #2d2a24;
+  color: #2d2220;
+  font-family:
+    var(--font-montserrat),
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.sat {
+  font-family: var(--font-satoshi);
+}
+
+
+/* styles/IphoneFrame.module.css o tus estilos globales */
+
+/* Contenedor del marco y título */
+.iphone-frame-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+/* El Marco Principal del Teléfono */
+.iphone-frame {
+  width: 300px; /* Ancho del teléfono */
+  height: 600px; /* Alto del teléfono */
+  background: #000;
+  border: 12px solid #333; /* El borde que simula el chasis */
+  border-radius: 40px; /* Las esquinas redondeadas del teléfono */
+  box-shadow: 0 0 0 2px #555, 0 0 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden; /* Importante para contener la pantalla */
+}
+
+/* La Pantalla (donde irá el video) */
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video llene el área sin distorsión */
+}
+
+/* Simulación de la Muesca (Notch) */
+.iphone-notch {
+  width: 40%;
+  height: 25px;
+  background: #000;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Asegura que esté por encima del video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.speaker {
+  width: 30px;
+  height: 5px;
+  background: #111;
+  border-radius: 5px;
+}
+
+
+/* Título del proyecto */
+.project-title {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }

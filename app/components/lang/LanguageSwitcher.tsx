@@ -35,10 +35,10 @@ export function LanguageSwitcher({ className = "" }: Props) {
         aria-current={active ? "page" : undefined}
         className={[
           "px-3 py-1.5 text-sm font-medium rounded-full transition-all",
-          "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2d2a24]",
+          "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-mocha",
           active
-            ? "bg-[#2d2a24]/80 text-background shadow-sm"
-            : "text-foreground/80 hover:bg-[#2d2a24]/30",
+            ? "bg-mocha/80 text-vainilla shadow-sm"
+            : "text-foreground/80 hover:bg-mocha/30",
         ].join(" ")}
       >
         {label}

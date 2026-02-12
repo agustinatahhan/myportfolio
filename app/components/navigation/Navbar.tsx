@@ -10,7 +10,6 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { IoGlobeOutline } from "react-icons/io5";
 import Image from "next/image";
 import { LanguageSwitcher } from "../lang/LanguageSwitcher";
 
@@ -34,17 +33,26 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // hash detect (solo en cliente)
   useEffect(() => {
     setHash(window.location.hash);
+    
+    const onHashChange = () => setHash(window.location.hash);
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 
   const navItems = [
     { key: "home", href: "#top" },
-    { key: "about", href: "#about" },
     { key: "projects", href: "#work" },
     { key: "skills", href: "#skills" },
+    { key: "contact", href: "#contact" },
   ];
+
+  // Función para verificar si el link está activo
+  const isActive = (href: string) => {
+    if (href === "#top") return hash === "" || hash === "#top";
+    return hash === href;
+  };
 
   const basePath = useMemo(() => {
     if (!pathname) return "";
@@ -61,7 +69,7 @@ export default function Navbar() {
       as="nav"
       className={cx(
         "sticky top-0 z-50 transition-all",
-        scrolled ? "bg-background backdrop-blur shadow-sm" : "bg-background"
+        scrolled ? "bg-mocha backdrop-blur shadow-sm" : "bg-mocha"
       )}
     >
       {({ open }) => (
@@ -72,7 +80,7 @@ export default function Navbar() {
               <div className="flex items-center justify-start w-12 h-12 sm:w-15 sm:h-15 relative">
                 <Link href={`/${locale}#top`}>
                   <Image
-                    src="/favicon.ico"
+                    src="/logo/logo.png"
                     alt="logo"
                     fill
                     className="object-contain"
@@ -89,8 +97,10 @@ export default function Navbar() {
                       key={item.key}
                       href={`/${locale}${item.href}`}
                       className={cx(
-                        "px-3 py-2 text-lg font-medium rounded-4xl transition-colors",
-                        "hover:text-foreground hover:bg-[#cb82d4]/50"
+                        "px-3 py-2 text-vainilla text-sm uppercase tracking-widest font-medium rounded-4xl transition-all duration-200 sat",
+                        "border-2 border-transparent",
+                        "hover:border-vainilla",
+                       
                       )}
                     >
                       {t(item.key)}
@@ -107,7 +117,7 @@ export default function Navbar() {
               {/* Mobile: lang + burger */}
               <div className="flex items-center gap-2 sm:hidden">
                 <LanguageSwitcher />
-                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-foreground/70 hover:bg-[#cb82d4]/50 hover:text-foreground focus:outline-2 focus:outline-[--color-brand]">
+                <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-foreground/70 hover:border-vainilla hover:text-foreground focus:outline-2 focus:outline-[--color-brand]">
                   {open ? (
                     <XMarkIcon className="size-6" />
                   ) : (
@@ -127,8 +137,10 @@ export default function Navbar() {
                   as={Link}
                   href={`/${locale}${item.href}`}
                   className={cx(
-                    "block rounded-4xl px-3 py-2 text-base font-medium transition-colors",
-                    "text-foreground/80 hover:text-foreground hover:bg-[#cb82d4]/50"
+                    "block rounded-4xl px-3 py-2 text-base font-medium transition-all duration-200",
+                    "text-vainilla/80 hover:text-vainilla",
+                    "border-2 border-transparent hover:border-vainilla",
+                    isActive(item.href) && "border-vainilla text-vainilla"
                   )}
                 >
                   {t(item.key)}
