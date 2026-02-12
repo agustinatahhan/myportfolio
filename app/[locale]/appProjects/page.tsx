@@ -34,7 +34,7 @@ export default function ProjectAppSection() {
                           src={app.videoUrl}
                           controls
                           playsInline
-                          className="w-full h-full object-fill"
+                          className="w-full h-full object-cover md:object-fill"
                         />
                       </div>
                     </div>

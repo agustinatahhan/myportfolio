@@ -7,7 +7,7 @@ export default function Home() {
   const letters = (t("rol") as string).split("");
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen bg-mocha text-vainilla overflow-hidden px-6">
+    <section className="relative flex flex-col items-center justify-center min-h-screen bg-mocha text-vainilla overflow-hidden px-6">
       <div className="flex flex-col items-center max-w-5xl w-full z-10">
         {/* <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -17,7 +17,7 @@ export default function Home() {
         >
           {t("rol")}
         </motion.p> */}
-        <div className=" h-12 sm:h-16 flex items-center justify-center overflow-visible">
+        <div className="mb-4 sm:mb-6 flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -53,12 +53,13 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col items-center leading-[0.85] text-center"
+          className="flex flex-col items-center leading-[0.95] md:leading-[0.85]
+ text-center"
         >
-          <h1 className="text-7xl md:text-[8rem] lg:text-[12rem] font-bold uppercase tracking-tighter sat">
+          <h1 className="text-6xl md:text-[8rem] lg:text-[12rem] font-bold uppercase tracking-tighter sat">
             {t("name")}
           </h1>
-          <h1 className="text-7xl md:text-[8rem] lg:text-[12rem] font-bold uppercase tracking-tighter sat">
+          <h1 className="text-6xl md:text-[8rem] lg:text-[12rem] font-bold uppercase tracking-tighter sat">
             {t("lastname")}
           </h1>
         </motion.div>
