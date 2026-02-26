@@ -3,7 +3,8 @@
     "name": "Agustina",
     "lastname": "Tahhan",
     "rol": "Front End Developer",
-    "description": "me encanta convertir grandes ideas en código"
+    "description": "Diseño y desarrollo de interfaces escalables.",
+    "ver": "Ver Proyectos"
   },
   "Navbar": {
     "home": "Inicio",
@@ -36,7 +37,7 @@
     },
     "neurosinergia": {
       "title": "Neurosinergia",
-      "description": "Ecommerce especializado en materiales terapéuticos y educativos. La plataforma permite explorar, filtrar y comprar recursos diseñados para profesionales y familias, ofreciendo una experiencia de compra clara, accesible y orientada a la conversión.",
+      "description": "Ecommerce especializado en materiales terapéuticos y educativos. La plataforma permite explorar, filtrar y comprar recursos diseñados para profesionales y familias, ofreciendo una experiencia de compra clara y accesible.",
       "features": [
         "Desarrollado con WordPress utilizando WooCommerce para la gestión completa del ecommerce.",
         "Diseño y maquetación realizados con Elementor, priorizando claridad visual y jerarquía de información.",

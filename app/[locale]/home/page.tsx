@@ -9,14 +9,6 @@ export default function Home() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen bg-mocha text-vainilla overflow-hidden px-6">
       <div className="flex flex-col items-center max-w-5xl w-full z-10">
-        {/* <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-sm sm:text-lg uppercase tracking-[0.2em] mb-4 font-medium opacity-90"
-        >
-          {t("rol")}
-        </motion.p> */}
         <div className="mb-4 sm:mb-6 flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -49,19 +41,43 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col items-center leading-[0.95] md:leading-[0.85]
- text-center"
+          className="flex flex-col items-center leading-[0.9] text-center"
         >
-          <h1 className="text-6xl md:text-[8rem] lg:text-[12rem] font-bold uppercase tracking-tighter sat">
+          <h1 className="text-6xl md:text-[7rem] lg:text-[9rem] font-bold uppercase tracking-tighter sat">
             {t("name")}
           </h1>
-          <h1 className="text-6xl md:text-[8rem] lg:text-[12rem] font-bold uppercase tracking-tighter sat">
+          <h1 className="text-6xl md:text-[7rem] lg:text-[9rem] font-bold uppercase tracking-tighter sat">
             {t("lastname")}
           </h1>
+        </motion.div>
+
+       
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.9 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="mt-8 text-sm sm:text-base max-w-md text-center font-light tracking-wide leading-relaxed"
+        >
+          {t("description")}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
+          className="mt-10"
+        >
+          <a
+            href="#work"
+            className="px-8 py-3 border border-vainilla/30 hover:bg-vainilla hover:text-mocha transition-all duration-300 rounded-full text-xs uppercase tracking-[0.2em]"
+          >
+            {t("ver")}
+          </a>
         </motion.div>
       </div>
     </section>

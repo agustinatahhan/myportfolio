@@ -3,7 +3,8 @@
     "name": "Agustina",
     "lastname": "Tahhan",
     "rol": "Front End Developer",
-    "description": "I love turning great ideas in to code"
+    "description": "Designing and building scalable interfaces.",
+    "ver": "View Projects"
   },
   "Navbar": {
     "home": "Home",
@@ -37,7 +38,7 @@
     },
     "neurosinergia": {
       "title": "Neurosinergia ",
-      "description": "An ecommerce platform specialized in therapeutic and educational materials. The website allows users to browse, filter, and purchase resources designed for professionals and families, delivering a clear and conversion-focused shopping experience.",
+      "description": "An ecommerce platform specialized in therapeutic and educational materials. The website allows users to browse, filter, and purchase resources designed for professionals and families, delivering a clear shopping experience.",
       "features": [
         "Built with WordPress using WooCommerce for full ecommerce management.",
         "Layout and design created with Elementor, prioritizing visual clarity and content hierarchy.",
