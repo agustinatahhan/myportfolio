@@ -34,6 +34,30 @@
         "Optimización de imágenes y estructura SEO orientada a la escalabilidad del contenido."
       ]
     },
+    "neurosinergia": {
+      "title": "Neurosinergia",
+      "description": "Ecommerce especializado en materiales terapéuticos y educativos. La plataforma permite explorar, filtrar y comprar recursos diseñados para profesionales y familias, ofreciendo una experiencia de compra clara, accesible y orientada a la conversión.",
+      "features": [
+        "Desarrollado con WordPress utilizando WooCommerce para la gestión completa del ecommerce.",
+        "Diseño y maquetación realizados con Elementor, priorizando claridad visual y jerarquía de información.",
+        "Gestión de productos, categorías, stock y pedidos desde el panel administrativo.",
+        "Integración de pasarelas de pago y configuración de envíos.",
+        "Optimización básica SEO y estructura pensada para escalabilidad del catálogo.",
+        "Interfaz responsive adaptada a dispositivos móviles."
+      ]
+    },
+    "learnwithiok": {
+      "title": "Learn With IOK",
+      "description": "Portal informativo de una profesora de inglés donde los estudiantes pueden conocer sus servicios, metodología y reservar clases. El sitio combina diseño moderno, rendimiento y una experiencia clara enfocada en la conversión.",
+      "features": [
+        "Desarrollado con Next.js y TypeScript bajo una arquitectura moderna y optimizada.",
+        "Estilizado con Tailwind CSS priorizando diseño limpio y responsive.",
+        "Integración de Calendly para reserva automática de clases.",
+        "Deploy realizado en Vercel con enfoque en performance y velocidad de carga.",
+        "Estructura optimizada para SEO y buenas prácticas de accesibilidad.",
+        "Código tipado y organizado para facilitar mantenimiento y escalabilidad."
+      ]
+    },
     "photoscape": {
       "title": "Photoscape",
       "description": "Proyecto desarrollado para ThePostDM, una agencia digital que gestiona múltiples marcas. Diseñé y desarrollé una experiencia web moderna y escalable para uno de sus clientes, priorizando rendimiento, identidad visual y claridad en la navegación.",

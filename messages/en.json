@@ -35,6 +35,30 @@
         "Optimized image handling and SEO-oriented structure for content scalability."
       ]
     },
+    "neurosinergia": {
+      "title": "Neurosinergia ",
+      "description": "An ecommerce platform specialized in therapeutic and educational materials. The website allows users to browse, filter, and purchase resources designed for professionals and families, delivering a clear and conversion-focused shopping experience.",
+      "features": [
+        "Built with WordPress using WooCommerce for full ecommerce management.",
+        "Layout and design created with Elementor, prioritizing visual clarity and content hierarchy.",
+        "Product, category, stock, and order management through the admin dashboard.",
+        "Payment gateway integration and shipping configuration.",
+        "Basic SEO optimization and scalable catalog structure.",
+        "Fully responsive interface optimized for mobile devices."
+      ]
+    },
+    "learnwithiok": {
+      "title": "Learn With IOK",
+      "description": "An informational portal for an English teacher where students can explore services, methodology, and book lessons. The site combines modern design, performance, and a clear user journey focused on conversion.",
+      "features": [
+        "Built with Next.js and TypeScript using a modern optimized architecture.",
+        "Styled with Tailwind CSS, focusing on clean and responsive design.",
+        "Calendly integration for automated lesson booking.",
+        "Deployed on Vercel with strong performance and fast loading times.",
+        "SEO-optimized structure and accessibility best practices.",
+        "Typed and well-structured codebase for maintainability and scalability."
+      ]
+    },
     "photoscape": {
       "title": "Photoscape",
       "description": "Freelance project for a private client who needed a modern and functional website to showcase their landscaping services. The site was designed to emphasize visual appeal, fast performance, and ease of navigation across all devices.",

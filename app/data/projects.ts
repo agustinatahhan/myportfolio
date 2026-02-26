@@ -28,6 +28,34 @@ export const projects: ProjectBase[] = [
     features: ["Projects.guiagastronomica.features"],
   },
   {
+    id: "learnwithiok",
+    kind: "web",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Calendly", "Vercel"],
+    live: "https://learnwithiok.vercel.app/",
+    media: [
+      { type: "image", src: "/learn1.jpeg", alt: "Home View" },
+      { type: "image", src: "/learn2.jpeg", alt: "Services View" },
+      { type: "image", src: "/learn3.jpeg", alt: "Booking Section" },
+    ],
+    titleKey: "Projects.learnwithiok.title",
+    descKey: "Projects.learnwithiok.description",
+    features: ["Projects.learnwithiok.features"],
+  },
+  {
+    id: "neurosinergia",
+    kind: "web",
+    tech: ["WordPress", "WooCommerce", "Elementor", "PHP", "MySQL"],
+    live: "https://neurosinergia.store",
+    media: [
+      { type: "image", src: "/neuro1.jpeg", alt: "Home View" },
+      { type: "image", src: "/neuro2.jpeg", alt: "Shop View" },
+      { type: "image", src: "/neuro3.jpeg", alt: "Product Detail View" },
+    ],
+    titleKey: "Projects.neurosinergia.title",
+    descKey: "Projects.neurosinergia.description",
+    features: ["Projects.neurosinergia.features"],
+  },
+  {
     id: "photoscape",
     kind: "web",
     tech: [

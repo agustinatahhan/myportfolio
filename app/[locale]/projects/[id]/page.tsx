@@ -108,7 +108,7 @@ export default async function ProjectPage({ params }: Props) {
                       src={m.src}
                       alt={m.alt}
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                       priority={i === 0}
                       sizes="(max-width: 1200px) 100vw, 1200px"
                     />

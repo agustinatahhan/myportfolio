@@ -33,7 +33,7 @@ export default function ProjectCard({
               alt={imageAlt}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"
-              className="object-cover transition duration-700 group-hover:scale-[1.05]"
+              className="object-cover object-top transition duration-700 group-hover:scale-[1.05]"
               priority={priority}
             />
           </div>
